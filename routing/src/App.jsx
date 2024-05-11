@@ -9,6 +9,7 @@ import {
   Route,
 } from "react-router-dom";
 import Layout from "./pages/Layout";
+import EditContact from "./pages/EditContact";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -17,6 +18,7 @@ const router = createBrowserRouter(
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/edit/:id" element={<EditContact />} />
       </Route>
       <Route path="*" element={<Notfound />} />
     </Route>
